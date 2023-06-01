@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="352.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <ImageView fitHeight="352.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/background.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="startBtn" layoutX="226.0" layoutY="159.0" mnemonicParsing="false" onAction="#startBtn" prefHeight="34.0" prefWidth="134.0" stylesheets="@style.css" text="Start the game" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="shipImageView" fitHeight="59.0" fitWidth="67.0" layoutX="265.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/ship.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="titleLabel" layoutX="205.0" layoutY="67.0" text="Star Blaster" textFill="RED">
+         <font>
+            <Font name="Bauhaus 93" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="laserImageView" fitHeight="231.0" fitWidth="32.0" layoutX="277.0" layoutY="10.0" opacity="0.0" pickOnBounds="true">
+         <image>
+            <Image url="@Images/laser.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="alien6" fitHeight="59.0" fitWidth="42.0" layoutX="274.0" layoutY="-46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/alien.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="alien5" fitHeight="59.0" fitWidth="42.0" layoutX="223.0" layoutY="-46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/alien.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="alien4" fitHeight="59.0" fitWidth="42.0" layoutX="173.0" layoutY="-46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/alien.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="alien3" fitHeight="59.0" fitWidth="42.0" layoutX="124.0" layoutY="-46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/alien.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="alien2" fitHeight="59.0" fitWidth="42.0" layoutX="73.0" layoutY="-46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/alien.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="alien1" fitHeight="59.0" fitWidth="42.0" layoutX="22.0" layoutY="-46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/alien.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="alien7" fitHeight="59.0" fitWidth="42.0" layoutX="324.0" layoutY="-46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/alien.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="alien8" fitHeight="59.0" fitWidth="42.0" layoutX="374.0" layoutY="-46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/alien.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="alien9" fitHeight="59.0" fitWidth="42.0" layoutX="424.0" layoutY="-46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/alien.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="alien10" fitHeight="59.0" fitWidth="42.0" layoutX="474.0" layoutY="-46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/alien.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="alien11" fitHeight="59.0" fitWidth="42.0" layoutX="524.0" layoutY="-46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/alien.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="gameOver" layoutX="207.0" layoutY="109.0" text="Game Over" textFill="RED">
+         <font>
+            <Font name="Bauhaus 93" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="502.0" layoutY="6.0" opacity="0.7" text="Score: " textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="scoreLabel" layoutX="545.0" layoutY="6.0" opacity="0.7" prefHeight="17.0" prefWidth="32.0" text="0" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="restartBtn" layoutX="247.0" layoutY="159.0" mnemonicParsing="false" onAction="#restartBtn" prefHeight="25.0" prefWidth="95.0" stylesheets="@style.css" text="Restart">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="heart1" fitHeight="15.0" fitWidth="15.0" layoutX="15.0" layoutY="9.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/heart.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="heart2" fitHeight="15.0" fitWidth="15.0" layoutX="36.0" layoutY="9.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/heart.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="heart3" fitHeight="15.0" fitWidth="15.0" layoutX="57.0" layoutY="9.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/heart.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="redLine" fitHeight="14.0" fitWidth="587.0" layoutX="1.0" layoutY="346.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@Images/red.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="rulesLabel1" layoutX="19.0" layoutY="64.0" prefHeight="48.0" prefWidth="107.0" text="Use A/D to move" textFill="RED">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="rulesLabel2" layoutX="18.0" layoutY="102.0" prefHeight="48.0" prefWidth="107.0" text="Use S to shoot" textFill="RED">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="rulesLabel3" layoutX="19.0" layoutY="135.0" prefHeight="48.0" prefWidth="173.0" text="The blue orb slows down " textFill="RED">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="rulesLabel4" layoutX="19.0" layoutY="159.0" prefHeight="48.0" prefWidth="173.0" text="the shot aliens" textFill="RED">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="rulesLabel5" layoutX="19.0" layoutY="193.0" prefHeight="48.0" prefWidth="184.0" text="If you lose your hearts or let" textFill="RED">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="rulesLabel6" layoutX="19.0" layoutY="218.0" prefHeight="48.0" prefWidth="245.0" text="too many aliens pass the game is over" textFill="RED">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
